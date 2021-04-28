@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="left top">
+        <h2 class="title">
+          <span>Learn to code by</span>
+          <span>watching others</span>
+        </h2>
+        <p class="text">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="right bottom">
+        <div class="btn cta">
+          <p>
+            <span>Try it free 7 days then </span><span>$20/mo. thereafter</span>
+          </p>
+        </div>
+        <div>
+          <form action="submit" class="form" id="form">
+
+            <!-- START INPUT UNIT 1 -->
+            <div class="input-unit">
+              <label for="fname"></label>
+              <input type="text" id="fname" placeholder="First Name" />
+              <i
+                class="fas fa-check-circle good" id='good'
+              ></i>
+              <i class="fas fa-exclamation-circle bad" id="bad"></i>
+              <small><p>First name cannot be empty</p></small>
+              </div>
+              <!-- END INPUT UNIT 1 -->
+
+              <!-- START INPUT UNIT 2 -->
+            <div class="input-unit">
+              <label for="fname"></label>
+              <input type="text" id="lname" placeholder="Last Name " /><i
+                class="fas fa-check-circle good" id='good'
+              ></i>
+              <i class="fas fa-exclamation-circle bad" id="bad"></i>
+              <small><p>Last name cannot be empty</p></small>
+              </div>
+              <!-- END INPUT UNIT 2 -->
+
+              <!-- START INPUT UNIT 3 -->
+            <div class="input-unit">
+              <label for="email"></label>
+              <input type="text" id="email" placeholder="Email Address" /><i
+                class="fas fa-check-circle good" id='good'
+              ></i>
+              <i class="fas fa-exclamation-circle bad" id="bad"></i>
+              <small><p>Email cannot be empty</p></small>
+              </div>
+              <!-- END INPUT UNIT 3 -->
+
+              <!-- START INPUT UNIT 4 -->
+            <div class="input-unit">
+              <label for="password"></label>
+              <input type="password" id="password" placeholder="Password" /><i
+                class="fas fa-check-circle good" id='good'
+              ></i>
+              <i class="fas fa-exclamation-circle bad" id="bad"></i>
+              <small><p>Password cannot be empty</p></small>
+              </div>
+              <!-- END INPUT UNIT 4 -->
+              <button class="btn action" id="action">Claim your free trial </button>
+              <small class="terms"><p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a>.</p></small>
+              </form>
+              </div>
+          
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
